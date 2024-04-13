@@ -133,242 +133,348 @@
             .shopping-cart .def-number-input.number-input button.plus:after {
             background-color: #4285f4;
             }
+            .py-3 {
+                position: fixed;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: #f8f9fa; /* Customize the background color */
+                    padding: 20px; /* Add padding for spacing */
+            }
     </style>
         <body>
-            <section class="h-100 h-custom">
-                <div class="container h-100 py-5">
-                    <div
-                        class="row d-flex justify-content-center align-items-center h-100">
-                        <div class="col">
-                            <div class="card shopping-cart"
-                                style="border-radius: 15px;">
-                                <div class="card-body text-black">
-
-                                    <div class="row">
-                                        <div class="col-lg-6 px-5 py-4">
-
-                                            <h3
-                                                class="mb-5 pt-2 text-center fw-bold text-uppercase">Sản phẩm</h3>
-
-                                            <div
-                                                class="d-flex align-items-center mb-5">
-                                                <div class="flex-shrink-0">
-                                                    <img
-                                                        src="./products/SKIRT.jpg"
-                                                        class="img-fluid"
-                                                        style="width: 150px;"
-                                                        alt="Generic placeholder image">
-                                                </div>
-                                                <div class="flex-grow-1 ms-3">
-                                                    <a href="#!"
-                                                        class="float-end text-black"><i
-                                                            class="fas fa-times"></i></a>
-                                                    <h5
-                                                        class="text-primary">áo đen quần trắng</h5>
-                                                    
-                                                    <div
-                                                        class="d-flex align-items-center">
-                                                        <p
-                                                            class="fw-bold mb-0 me-5 pe-3">799$</p>
+            
+              <body>
+                <!--begin navbar-->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                      <img src="sliders/LOGO_NEW.png" alt="Bootstrap" height="45">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">TRANG
+                            CHỦ</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          SẢN PHẨM
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Thời trang nữ</a></li>
+                          <li><a class="dropdown-item" href="#">Thời trang nam</a></li>
+                          <li><a class="dropdown-item" href="#">Thời trang trẻ em</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">NEW COLLECTION - SPRING</a></li>
+                          <li><a class="dropdown-item" href="#">NEW COLLECTION - WINTER</a></li>
+                        </ul>
+                      </li> -->
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">THÔNG TIN</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">YÊU THÍCH</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./Cart.html">GIỎ HÀNG</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              TÀI KHOẢN
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Thông tin cá nhân</a></li>
+                              <li><a class="dropdown-item" href="#">Đơn hàng của tôi</a></li>
+                              <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Quản lý đơn hàng</a></li>
+                              <li><a class="dropdown-item" href="#">Quản lý sản phẩm</a></li>
+                            </ul>
+                          </li>
+                      </ul>
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search"
+                          aria-label="Search">
+                        <button class="btn btn-outline-success"
+                          type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </nav>
+                <!--end navbar-->
+                <!--Page content-->
+                <section class="h-100 h-custom">
+                    <div class="container h-100 py-5">
+                        <div
+                            class="row d-flex justify-content-center align-items-center h-100">
+                            <div class="col">
+                                <div class="card shopping-cart"
+                                    style="border-radius: 15px;">
+                                    <div class="card-body text-black">
+    
+                                        <div class="row">
+                                            <div class="col-lg-6 px-5 py-4">
+    
+                                                <h3
+                                                    class="mb-5 pt-2 text-center fw-bold text-uppercase">Sản phẩm</h3>
+    
+                                                <div
+                                                    class="d-flex align-items-center mb-5">
+                                                    <div class="flex-shrink-0">
+                                                        <img
+                                                            src="./products/SKIRT.jpg"
+                                                            class="img-fluid"
+                                                            style="width: 150px;"
+                                                            alt="Generic placeholder image">
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <a href="#!"
+                                                            class="float-end text-black"><i
+                                                                class="fas fa-times"></i></a>
+                                                        <h5
+                                                            class="text-primary">áo đen quần trắng</h5>
+                                                        
                                                         <div
-                                                            class="def-number-input number-input safari_only">
-                                                            <button
-                                                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                                                class="minus"></button>
-                                                            <input
-                                                                class="quantity fw-bold text-black"
-                                                                min="0"
-                                                                name="quantity"
-                                                                value="1"
-                                                                type="number">
-                                                            <button
-                                                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                                class="plus"></button>
+                                                            class="d-flex align-items-center">
+                                                            <p
+                                                                class="fw-bold mb-0 me-5 pe-3">799$</p>
+                                                            <div
+                                                                class="def-number-input number-input safari_only">
+                                                                <button
+                                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                                                    class="minus"></button>
+                                                                <input
+                                                                    class="quantity fw-bold text-black"
+                                                                    min="0"
+                                                                    name="quantity"
+                                                                    value="1"
+                                                                    type="number">
+                                                                <button
+                                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                                                    class="plus"></button>
+                                                            </div>
+                                                            <div>
+                                                                <input class="form-check-input" type="checkbox" name="check">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <div
-                                                class="d-flex align-items-center mb-5">
-                                                <div class="flex-shrink-0">
-                                                    <img
-                                                        src="./products/QUANDEN.jpg"
-                                                        class="img-fluid"
-                                                        style="width: 150px;"
-                                                        alt="Generic placeholder image">
-                                                </div>
-                                                <div class="flex-grow-1 ms-3">
-                                                    <a href="#!"
-                                                        class="float-end text-black"><i
-                                                            class="fas fa-times"></i></a>
-                                                    <h5
-                                                        class="text-primary">quần đen + áo</h5>
-                                                   
-                                                    <div
-                                                        class="d-flex align-items-center">
-                                                        <p
-                                                            class="fw-bold mb-0 me-5 pe-3">239$</p>
+    
+                                                <div
+                                                    class="d-flex align-items-center mb-5">
+                                                    <div class="flex-shrink-0">
+                                                        <img
+                                                            src="./products/QUANDEN.jpg"
+                                                            class="img-fluid"
+                                                            style="width: 150px;"
+                                                            alt="Generic placeholder image">
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <a href="#!"
+                                                            class="float-end text-black"><i
+                                                                class="fas fa-times"></i></a>
+                                                        <h5
+                                                            class="text-primary">quần đen + áo</h5>
+                                                       
                                                         <div
-                                                            class="def-number-input number-input safari_only">
-                                                            <button
-                                                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                                                class="minus"></button>
-                                                            <input
-                                                                class="quantity fw-bold text-black"
-                                                                min="0"
-                                                                name="quantity"
-                                                                value="1"
-                                                                type="number">
-                                                            <button
-                                                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                                class="plus"></button>
+                                                            class="d-flex align-items-center">
+                                                            <p
+                                                                class="fw-bold mb-0 me-5 pe-3">239$</p>
+                                                            <div
+                                                                class="def-number-input number-input safari_only">
+                                                                <button
+                                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                                                    class="minus"></button>
+                                                                <input
+                                                                    class="quantity fw-bold text-black"
+                                                                    min="0"
+                                                                    name="quantity"
+                                                                    value="1"
+                                                                    type="number">
+                                                                <button
+                                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                                                    class="plus"></button>
+                                                            </div>
+                                                            <div>
+                                                                <input class="form-check-input" type="checkbox" name="check">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <div
-                                                class="d-flex align-items-center mb-5">
-                                                <div class="flex-shrink-0">
-                                                    <img
-                                                        src="./products/Ecru White Modern Elegant Minimal Women_s Fashion Clothing Collection Instagram Story.png"
-                                                        class="img-fluid"
-                                                        style="width: 150px;"
-                                                        alt="Generic placeholder image">
-                                                </div>
-                                                <div class="flex-grow-1 ms-3">
-                                                    <a href="#!"
-                                                        class="float-end text-black"><i
-                                                            class="fas fa-times"></i></a>
-                                                    <h5
-                                                        class="text-primary">áo xanh + quần xanh</h5>
-                                                    
-                                                    <div
-                                                        class="d-flex align-items-center">
-                                                        <p
-                                                            class="fw-bold mb-0 me-5 pe-3">659$</p>
+    
+                                                <div
+                                                    class="d-flex align-items-center mb-5">
+                                                    <div class="flex-shrink-0">
+                                                        <img
+                                                            src="./products/Ecru White Modern Elegant Minimal Women_s Fashion Clothing Collection Instagram Story.png"
+                                                            class="img-fluid"
+                                                            style="width: 150px;"
+                                                            alt="Generic placeholder image">
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <a href="#!"
+                                                            class="float-end text-black"><i
+                                                                class="fas fa-times"></i></a>
+                                                        <h5
+                                                            class="text-primary">áo xanh + quần xanh</h5>
+                                                        
                                                         <div
-                                                            class="def-number-input number-input safari_only">
-                                                            <button
-                                                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                                                class="minus"></button>
-                                                            <input
-                                                                class="quantity fw-bold text-black"
-                                                                min="0"
-                                                                name="quantity"
-                                                                value="2"
-                                                                type="number">
-                                                            <button
-                                                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                                class="plus"></button>
+                                                            class="d-flex align-items-center">
+                                                            <p
+                                                                class="fw-bold mb-0 me-5 pe-3">659$</p>
+                                                            <div
+                                                                class="def-number-input number-input safari_only">
+                                                                <button
+                                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                                                    class="minus"></button>
+                                                                <input
+                                                                    class="quantity fw-bold text-black"
+                                                                    min="0"
+                                                                    name="quantity"
+                                                                    value="2"
+                                                                    type="number">
+                                                                <button
+                                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                                                    class="plus"></button>
+                                                            </div>
+                                                            <div>
+                                                                <input class="form-check-input" type="checkbox" name="check">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
+    
+                                                <hr class="mb-4"
+                                                    style="height: 2px; background-color: #1266f1; opacity: 1;">
+    
+                                                <div
+                                                    class="d-flex justify-content-between px-x">
+                                                    <p class="fw-bold">Giảm giá</p>
+                                                    <p class="fw-bold">95$</p>
+                                                </div>
+                                                <div
+                                                    class="d-flex justify-content-between p-2 mb-2"
+                                                    style="background-color: #e1f5fe;">
+                                                    <h5
+                                                        class="fw-bold mb-0">Tổng: </h5>
+                                                    <h5
+                                                        class="fw-bold mb-0">2261$</h5>
+                                                </div>
+    
                                             </div>
-
-                                            <hr class="mb-4"
-                                                style="height: 2px; background-color: #1266f1; opacity: 1;">
-
-                                            <div
-                                                class="d-flex justify-content-between px-x">
-                                                <p class="fw-bold">Giảm giá</p>
-                                                <p class="fw-bold">95$</p>
+                                            <div class="col-lg-6 px-5 py-4">
+    
+                                                <h3
+                                                    class="mb-5 pt-2 text-center fw-bold text-uppercase">THÔNG TIN NGƯỜI NHẬN</h3>
+    
+                                                <form class="mb-5">
+    
+                                                    <div class="form-outline mb-3">
+                                                        <label class="form-label fw-bold"
+                                                            for="typeText">Họ Tên</label>
+                                                        <input type="text"
+                                                            id="typeText"
+                                                            class="form-control form-control-lg"
+                                                            siez="17"
+                                                            value=""
+                                                            minlength="19"
+                                                            maxlength="19"name="name" />
+                                                        
+                                                    </div>
+    
+                                                    <div class="form-outline mb-3">
+                                                        <label class="form-label fw-bold"
+                                                            for="typeName">Số điện thoại</label>
+                                                        <input type="text"
+                                                            id="typeName"
+                                                            class="form-control form-control-lg"
+                                                            siez="17"
+                                                            value="" name="phone"/>
+                                                        
+                                                    </div>
+    
+                                                    <div class="form-outline mb-3">
+                                                        <label class="form-label fw-bold"
+                                                            for="typeName">Email</label>
+                                                        <input type="text"
+                                                            id="typeName"
+                                                            class="form-control form-control-lg"
+                                                            siez="17"
+                                                            value="" name="phone"/>
+                                                        
+                                                    </div>  
+                                                    <div class="form-outline mb-3">
+                                                        <label class="form-label fw-bold"
+                                                            for="typeName">Địa Chỉ</label>
+                                                        <input type="text"
+                                                            id="typeName"
+                                                            class="form-control form-control-lg"
+                                                            siez="17"
+                                                            value="" name="phone"/>
+                                                        
+                                                    </div>
+                                                    <div class="form-outline mb-3">
+                                                        <label class="form-label fw-bold"
+                                                            for="typeName">Phương Thức Thanh Toán</label>
+                                                        <input type="text"
+                                                            id="typeName"
+                                                            class="form-control form-control-lg"
+                                                            siez="17"
+                                                            value="Thanh Toán Khi Nhận Hàng" name="phone" disabled/>
+                                                        
+                                                    </div>
+                                                  
+                                                    <button type="button"
+                                                        class="btn btn-primary btn-block btn-lg">Mua</button>
+    
+                                                    <h5 class="fw-bold mb-5"
+                                                        style="position: absolute; bottom: 0;">
+                                                        <a href="#!"><i
+                                                                class="fas fa-angle-left me-2"></i>Trở về</a>
+                                                    </h5>
+    
+                                                </form>
+    
                                             </div>
-                                            <div
-                                                class="d-flex justify-content-between p-2 mb-2"
-                                                style="background-color: #e1f5fe;">
-                                                <h5
-                                                    class="fw-bold mb-0">Tổng: </h5>
-                                                <h5
-                                                    class="fw-bold mb-0">2261$</h5>
-                                            </div>
-
                                         </div>
-                                        <div class="col-lg-6 px-5 py-4">
-
-                                            <h3
-                                                class="mb-5 pt-2 text-center fw-bold text-uppercase">Thẻ</h3>
-
-                                            <form class="mb-5">
-
-                                                <div class="form-outline mb-5">
-                                                    <input type="text"
-                                                        id="typeText"
-                                                        class="form-control form-control-lg"
-                                                        siez="17"
-                                                        value="1234 5678 9012 3457"
-                                                        minlength="19"
-                                                        maxlength="19" />
-                                                    <label class="form-label"
-                                                        for="typeText">Số thẻ</label>
-                                                </div>
-
-                                                <div class="form-outline mb-5">
-                                                    <input type="text"
-                                                        id="typeName"
-                                                        class="form-control form-control-lg"
-                                                        siez="17"
-                                                        value="Trân" />
-                                                    <label class="form-label"
-                                                        for="typeName">Tên thẻ</label>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-md-6 mb-5">
-                                                        <div
-                                                            class="form-outline">
-                                                            <input type="text"
-                                                                id="typeExp"
-                                                                class="form-control form-control-lg"
-                                                                value="01/22"
-                                                                size="7"
-                                                                id="exp"
-                                                                minlength="7"
-                                                                maxlength="7" />
-                                                            <label
-                                                                class="form-label"
-                                                                for="typeExp">Hạn thẻ</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6 mb-5">
-                                                        <div
-                                                            class="form-outline">
-                                                            <input
-                                                                type="password"
-                                                                id="typeText"
-                                                                class="form-control form-control-lg"
-                                                                value="&#9679;&#9679;&#9679;"
-                                                                size="1"
-                                                                minlength="3"
-                                                                maxlength="3" />
-                                                            <label
-                                                                class="form-label"
-                                                                for="typeText">Cvv</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                              
-                                                <button type="button"
-                                                    class="btn btn-primary btn-block btn-lg">Mua</button>
-
-                                                <h5 class="fw-bold mb-5"
-                                                    style="position: absolute; bottom: 0;">
-                                                    <a href="#!"><i
-                                                            class="fas fa-angle-left me-2"></i>Trở về</a>
-                                                </h5>
-
-                                            </form>
-
-                                        </div>
+    
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+                <!--end product-->
+            
+                <!--end Page content-->
+                <!--footer-->
+                <footer class=" my-4">
+                  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#"
+                        class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="#"
+                        class="nav-link px-2 text-body-secondary">Features</a></li>
+                    <li class="nav-item"><a href="#"
+                        class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item"><a href="#"
+                        class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item"><a href="#"
+                        class="nav-link px-2 text-body-secondary">About</a></li>
+                  </ul>
+                  <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+                </footer>
+                <!--end footer-->
+            
+              </body>
         </body>
     </html>
